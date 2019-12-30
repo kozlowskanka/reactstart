@@ -9,7 +9,6 @@ class App extends React.Component {
         <h1 className={styles.title}>My first React app</h1>
         <h2 className={styles.subtitle}>A simple to-do app</h2>
         <List title={['To do things ',<sup key='1'>soon!</sup>]}>
-          {/* <p>I'm planning on doing all these things sooner, rather than later!</p> */}
         </List>
       </main>
     )
