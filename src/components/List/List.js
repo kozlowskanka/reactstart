@@ -2,15 +2,12 @@ import React from 'react';
 import styles from './List.scss';
 import Hero from '../Hero/Hero';
 // import Creator from '../Creator/Creator';
-import Column from '../Column/Column';
+import Column from '../Column/ColumnContainer';
 import PropTypes from 'prop-types';
 import {settings} from '../../data/dataStore';
 import ReactHtmlParser from 'react-html-parser';
 
 class List extends React.Component {
-  // state = {
-  //   columns: this.props.columns || [],
-  // }
 
   static propTypes = {
     title: PropTypes.node.isRequired,
@@ -47,11 +44,6 @@ class List extends React.Component {
         <div className={styles.description}>
           {ReactHtmlParser(description)}
         </div>
-        {/* <Hero titleText={this.props.title} 
-          heroImage= {this.props.image} />
-        <div className={styles.description}>
-          {ReactHtmlParser(this.props.description)}
-        </div> */}
         <div className={styles.columns}>
           {columns.map(columnData => (
             <Column key={columnData.id} {...columnData} />

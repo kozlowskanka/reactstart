@@ -1,15 +1,12 @@
 import React from 'react';
 import styles from './Column.scss';
 import PropTypes from 'prop-types';
-// import Card from '../Card/Card';
+import Card from '../Card/Card';
 // import Creator from '../Creator/Creator';
 import Icon from '../Icon/Icon';
 // import {settings} from '../../data/dataStore';
 
 class Column extends React.Component {
-  // state = {
-  //   cards: this.props.cards || [],
-  // }
 
   static propTypes = {
     title: PropTypes.node.isRequired,
@@ -33,7 +30,7 @@ class Column extends React.Component {
   // }
 
   render() {
-    // const {title, image, description} = this.props;
+    const {/*title, image, description,*/ cards} = this.props;
     return (
       <section className={styles.component}>
         <h3 className={styles.title}>
@@ -42,12 +39,12 @@ class Column extends React.Component {
           </span>
           {this.props.title}
         </h3>
-        {/* <div>
-          {this.state.cards.map(({key, ...cardsProps}) => (
-            <Card key={key} {...cardsProps} />
+        <div>
+          {cards.map(cardData => (
+            <Card key={cardData.id} {...cardData} />
           ))}
         </div>
-        <div className={styles.creator}>
+        {/* <div className={styles.creator}>
           <Creator text={settings.cardCreatorText} action={title => this.addCard(title)}/>
         </div> */}
       </section>
