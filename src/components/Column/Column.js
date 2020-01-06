@@ -33,7 +33,7 @@ class Column extends React.Component {
   // }
 
   render() {
-    // const {title, icon} = this.props;
+    // const {title, image, description} = this.props;
     return (
       <section className={styles.component}>
         <h3 className={styles.title}>
