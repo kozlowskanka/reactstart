@@ -7,6 +7,7 @@ import {BrowserRouter, Route} from 'react-router-dom';
 import {settings} from '../../data/dataStore';
 import {AnimatedSwitch} from 'react-router-transition';
 import styles from './App.scss';
+import List from '../List/ListContainer';
 
 const App = () => (
 
@@ -21,6 +22,7 @@ const App = () => (
         <Route exact path={settings.navigationPaths.home} component={Home} />
         <Route exact path={settings.navigationPaths.info} component={Info} />
         <Route exact path={settings.navigationPaths.faq} component={FAQ} />
+        <Route exact path="/list/:id" component={List} />
       </AnimatedSwitch>
     </MainLayout>
   </BrowserRouter>

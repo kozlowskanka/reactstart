@@ -104,6 +104,18 @@ const lists = [
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'list-2',
+    title: 'Things to do <sup>later!</sup>',
+    description: 'Interesting things I want to check out!',
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  },
+  {
+    id: 'list-3',
+    title: 'Do not do <sup>this!</sup>',
+    description: 'Uninteresting things I do not want to check out!',
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  },
 ];
 
 const columns = [
@@ -127,9 +139,9 @@ const columns = [
   },
   {
     id: 'column-4',
-    listId: 'list-2',
-    title: 'Strange column',
-    icon: 'question',
+    listId: 'list-3',
+    title: 'Curling',
+    icon: 'cat',
   },
 ];
 
