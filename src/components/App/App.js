@@ -8,6 +8,7 @@ import {settings} from '../../data/dataStore';
 import {AnimatedSwitch} from 'react-router-transition';
 import styles from './App.scss';
 import List from '../List/ListContainer';
+import SearchResults from '../SearchResults/SearchResultsContainer';
 
 const App = () => (
 
@@ -23,6 +24,7 @@ const App = () => (
         <Route exact path={settings.navigationPaths.info} component={Info} />
         <Route exact path={settings.navigationPaths.faq} component={FAQ} />
         <Route exact path="/list/:id" component={List} />
+        <Route exact path='/search/:id' component={SearchResults} />
       </AnimatedSwitch>
     </MainLayout>
   </BrowserRouter>

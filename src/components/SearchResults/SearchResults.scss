@@ -1,0 +1,15 @@
+@import "../../styles/settings.scss";
+
+.component {
+  width: 100%;
+  background: $color-success;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: $radius;
+  color: $color-dark;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
